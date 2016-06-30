@@ -1,6 +1,5 @@
-var partition = function( arr ){
+var quickSort = function( arr ){
   var pivot = [];
-  var counter;
   var partitionL;
   var partitionR;
   if(arr.length <= 1){
@@ -14,9 +13,9 @@ var partition = function( arr ){
   partitionR = arr.filter( function( element ) {
     return element > pivot;
   });
-  var completedSort = partition(partitionL).concat(pivot, partition(partitionR));
+  var completedSort = quickSort(partitionL).concat(pivot, quickSort(partitionR));
   return completedSort;
 
 };
 
-module.exports = partition;
+module.exports = quickSort;

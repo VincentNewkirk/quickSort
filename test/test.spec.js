@@ -3,7 +3,7 @@ var should = chai.should();
 var expect = chai.expect;
 var quickSort = require('./../js/script.js');
 
-describe('Merge Sort', function () {
+describe('Quick Sort', function () {
   it('Should exist', function () {
     expect(quickSort).to.exist;
   });
