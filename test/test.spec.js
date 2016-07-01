@@ -17,6 +17,8 @@ describe('Quick Sort', function () {
     it('Should sort the array', function () {
       expect(quickSort(arr)).to.deep.equal([1,3,4,5,6,7,8,8,9]);
       expect(quickSort(arr2)).to.deep.equal([0,0,1,1,3,4,4,5,5,5,6,6,20,29,65]);
+      console.log(arr2);
+      console.log(quickSort(arr2));
     });
   });
 });

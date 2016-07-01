@@ -15,7 +15,6 @@ var quickSort = function( arr ){
   });
   var completedSort = quickSort(partitionL).concat(pivot, quickSort(partitionR));
   return completedSort;
-
 };
 
 module.exports = quickSort;
